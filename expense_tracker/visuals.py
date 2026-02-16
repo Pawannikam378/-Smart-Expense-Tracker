@@ -9,7 +9,7 @@ def plot_category_distribution(category_data):
         ax.axis('off')
         return fig
     
-    ax.pie(category_data, labels=category_data.index, autopct='%1.1f%%', startangle=90)
+    ax.pie(category_data["Amount"], labels=category_data["Category"], autopct='%1.1f%%', startangle=90)
     ax.set_title("Expense Distribution by Category")
     return fig
 
@@ -43,3 +43,4 @@ def plot_spending_over_time(df):
     ax.set_ylabel("Amount")
     plt.grid(True)
     return fig
+
