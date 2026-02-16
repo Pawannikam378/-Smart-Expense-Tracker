@@ -52,7 +52,7 @@ def calculate_metrics(df):
 def get_monthly_spending_trend(df):
     """Groups data by month for bar chart."""
     if df.empty:
-        return pd.Series()
+        return pd.DataFrame()
     
     # Create a copy to avoid SettingWithCopyWarning on the original df
     df_copy = df.copy()
@@ -96,4 +96,5 @@ def predict_spending(df):
     predicted_total = sum(slope * date + intercept for date in future_dates)
     
     return max(0, predicted_total)
+
 
