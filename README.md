@@ -158,11 +158,6 @@ This project demonstrates:
 - Deployable Streamlit app  
 
 ---
-
-## 📜 License
-
-MIT License
-
 ---
 
 ## 👤 Author
